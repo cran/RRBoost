@@ -1,0 +1,14 @@
+9a2cebef6d4bf06a708e99456bd1a2f4 *DESCRIPTION
+cc5580d141481aeecd8356a73e41faa3 *NAMESPACE
+8c626217255c5c90033760bf63d9787d *R/Boost.R
+c023da61d88235d8be1369c0e62bca4c *R/airfoil.R
+3ccf9241314c71aa7f8df09912fd91ee *R/loss-functions.R
+2e4f6ce84bd36a14740ac58252203b71 *R/user_rpart.R
+db9ad4b1acb550b223a1d607edcf45fb *R/utilities.R
+a7342cb955b85f976d4274759002a14b *data/airfoil.RData
+61f1d89291eeae8d7a34606530dde215 *man/Boost.Rd
+7fbd935941f81eb2021fde88746fcb59 *man/Boost.control.Rd
+3b69c3544c76572a86313c75602fae69 *man/Boost.validation.Rd
+9bba1d8ac49433ad7f15fcddfb9c7e03 *man/airfoil.Rd
+f605115a62aea5955fc399eb4a817126 *man/cal_imp_func.Rd
+3c4e36bf5c81119b5c2450f309d59bed *man/cal_predict.Rd
