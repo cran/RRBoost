@@ -22,7 +22,7 @@ Boost.control(
 )
 }
 \arguments{
-\item{n_init}{number of iterations for the SBoost step of RRBoost ($T_{1,max}$) (int)}
+\item{n_init}{number of iterations for the SBoost step of RRBoost (\eqn{T_{1,max}}) (int)}
 
 \item{eff_m}{scalar between 0 and 1 indicating the efficiency (measured in a linear model with Gaussian errors) of Tukey's loss function used in the 2nd stage of RRBoost.}
 
@@ -82,10 +82,10 @@ my.control <- Boost.control(max_depth_init = 2,
 model_RRBoost_LADTree = Boost(x_train = xtrain, y_train = ytrain,
     x_val = xval, y_val = yval, x_test = xtest, y_test = ytest,
     type = "RRBoost", error = "rmse", y_init = "LADTree",
-    max_depth = 1, niter = 10, ## to keep the running time low
+    max_depth = 1, niter = 3, ## to keep the running time low
     control = my.control)
 
 }
 \author{
-Xiaomeng Ju, \email{xmengju@stat.ubc.ca}
+Xiaomeng Ju, \email{xiaomeng.ju@stat.ubc.ca}
 }

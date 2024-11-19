@@ -27,7 +27,7 @@ This function computes permutation variable importance scores
 given an object returned by \code{\link{Boost}} and a validation data set.
 }
 \examples{
-\donttest{
+\dontrun{
 data(airfoil)
 n <- nrow(airfoil)
 n0 <- floor( 0.2 * n )
@@ -48,12 +48,12 @@ model = Boost(x_train = xtrain, y_train = ytrain,
      type = "RRBoost", error = "rmse",
      y_init = "LADTree", max_depth = 1, niter = 1000,
      control = Boost.control(max_depth_init = 2,
-           min_leaf_size_init = 20, save_tree = TRUE,
+           min_leaf_size_init = 10, save_tree = TRUE,
            make_prediction =  FALSE, cal_imp = FALSE))
 var_importance <-  cal_imp_func(model, x_val = xval, y_val= yval)
 }
 
 }
 \author{
-Xiaomeng Ju, \email{xmengju@stat.ubc.ca}
+Xiaomeng Ju, \email{xiaomeng.ju@stat.ubc.ca}
 }

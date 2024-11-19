@@ -38,7 +38,7 @@ Boost.validation(
 
 \item{error}{a character string (or vector of character strings) indicating the types of error metrics to be evaluated on the test set. Valid options are: "rmse" (root mean squared error), "aad" (average absulute deviation), and "trmse" (trimmed root mean squared error)}
 
-\item{niter}{number of iterations (for RRBoost T_{1,max} + T_{2,max}) (numeric)}
+\item{niter}{number of iterations (for RRBoost \eqn{T_{1,max} + T_{2,max}}) (numeric)}
 
 \item{max_depth}{the maximum depth of the tree learners (numeric)}
 
@@ -64,7 +64,7 @@ This function runs the RRBoost algorithm (see \code{\link{Boost}}) on different 
 parameters for the initial fit, and chooses the optimal set based on the performance on the validation set.
 }
 \examples{
-\donttest{
+\dontrun{
 data(airfoil)
 n <- nrow(airfoil)
 n0 <- floor( 0.2 * n )
@@ -95,5 +95,5 @@ model_RRBoost_cv_LADTree = Boost.validation(x_train = xtrain,
 \code{\link{Boost}}, \code{\link{Boost.control}}.
 }
 \author{
-Xiaomeng Ju, \email{xmengju@stat.ubc.ca}
+Xiaomeng Ju, \email{xiaomeng.ju@stat.ubc.ca}
 }
